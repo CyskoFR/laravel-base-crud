@@ -6,6 +6,7 @@
 
 @section('page-content')
     <h1>Comics list:</h1>
+
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -33,4 +34,6 @@
             @endforeach
         </tbody>
     </table>
+    
+    <a class="btn btn-primary m-4" href="{{route('comics.create')}}">Create new</a>    
 @endsection

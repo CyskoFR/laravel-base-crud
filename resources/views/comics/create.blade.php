@@ -7,7 +7,9 @@
 @section('page-content')
     <div class="container my-4">
         <h1>Insert a new Comic</h1>
-        <form>
+        <form action="{{route('comics.store')}}" method="POST">
+            @csrf
+            
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" name="title">
@@ -24,7 +26,6 @@
             </div>
 
             <select class="form-select my-3" id="type" name="type">
-                <option selected>Select comic type</option>
                 <option value="comic book">Comic book</option>
                 <option value="graphic novel">Graphic novel</option>
             </select>
