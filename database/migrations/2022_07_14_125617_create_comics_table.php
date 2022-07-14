@@ -19,7 +19,8 @@ class CreateComicsTable extends Migration
             $table->text('description');
             $table->string('thumb')->nullable();
             $table->string('type', 20);
-            $table->float('price');
+            $table->string('price', 10);
+            
             $table->timestamps();
         });
     }
