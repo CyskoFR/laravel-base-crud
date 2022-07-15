@@ -29,6 +29,7 @@
                     <td>{{$comic->price}}</td>
                     <td>
                         <a class="btn btn-light" href="{{route('comics.show', $comic->id)}}">More</a>
+                        <a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}">Edit</a>
                     </td>
                 </tr>
             @endforeach
