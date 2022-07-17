@@ -32,7 +32,7 @@
             
             <div class="form-group">
                 <label for="description">Price $</label>
-                <input type="number" class="form-control" id="price" name="price">
+                <input type="number" class="form-control" id="price" name="price" step="any">
             </div>
 
             <button type="submit" class="btn btn-primary my-3">Create</button>
