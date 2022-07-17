@@ -37,6 +37,18 @@
 
             <button type="submit" class="btn btn-primary my-3">Create</button>
         </form>
-        <a class="btn btn-light" href="{{route('comics.index')}}">Home</a>    
+        <a class="btn btn-light" href="{{route('comics.index')}}">Home</a> 
+        
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>
+                            {{$error}}
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     </div>
 @endsection
